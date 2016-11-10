@@ -23,8 +23,8 @@ module.exports = function (config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'lib/*.js': ['webpack'],
-            'test/*.js': ['webpack']
+            'lib/*.js': ['webpack', 'sourcemap'],
+            'test/*.js': ['webpack', 'sourcemap']
         },
 
         webpack: {
@@ -33,6 +33,7 @@ module.exports = function (config) {
             // webpack watches dependencies
 
             // webpack configuration
+            devtool: 'inline-source-map'
         },
 
         webpackMiddleware: {
