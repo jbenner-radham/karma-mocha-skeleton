@@ -1,2 +1,9 @@
-# karma-mocha-skeleton
-A Karma &amp; Mocha skeleton project.
+karma-mocha-skeleton
+====================
+A Karma & Mocha skeleton project.
+
+Testing
+-------
+```
+npm test
+```
